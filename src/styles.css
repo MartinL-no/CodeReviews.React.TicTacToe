@@ -54,21 +54,50 @@ body {
   font-family: sans-serif;
   margin: 20px;
   padding: 0;
+
+  background: #080808;
+  color: #fff;
 }
 
 .square {
-  background: #fff;
+  background: #080808;
   border: 1px solid #999;
   float: left;
   font-size: 24px;
   font-weight: bold;
-  line-height: 34px;
   height: 34px;
-  margin-right: -1px;
+  margin-right: 1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
   width: 34px;
+
+  border-radius: 12px;
+  border: 2px solid #FFD56A;
+}
+
+ol {
+  margin: 0;
+}
+
+button {
+  border-radius: 6px;
+  border: 1.5px solid #FFD56A;
+  margin-bottom: 4px;
+  margin-right: 4px;
+  background-color: #fff;
+  font-weight: semibold;
+
+  color: white;
+  background: #080808;
+}
+
+.X {
+  color: red;
+}
+
+.O {
+  color: blue;
 }
 
 .board-row:after {
@@ -83,6 +112,7 @@ body {
 .game {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .game-info {
